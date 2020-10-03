@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Scratchpad</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* Style the header */
+  header {
+    background-color: #6c737e;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+
+  /* Container for flexboxes */
+  section {
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  /* Style the navigation menu */
+  nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #b5cfd8;
+    padding: 20px;
+  }
+
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  /* Style the content */
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+
+  /* Style the footer */
+  footer {
+    background-color: #6c737e;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+</style>
+
+<header>
+  Work Experience
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Envision Healthcare</a></li>
+      <li><a href="#">Sixt Rent A Car</a></li>
+      <li><a href="#">S2 Brands</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h1>Envision Healthcare</h1>
+    <ul>
+      <li>Defined processes and tools best suited to each project. Moved between agile and waterfall approaches depending on project specifics, creating detailed project road maps, plans, and schedules</li>
+      <li>Coached stakeholders on how to effectively interact with Scrum team and product owners on backlog management</li>
+    </ul>
+    <p><strong>Projects</strong></p>
+    <ul>
+      <li><strong>Billing System Integrations:</strong> Led development team simultaneously integrate eight new billing systems into the enterprise data warehouse environment.
+        <p><i>Results:</i> Completed project improved the consistency, recoverability and accessibility of data.</p>
+      </li>
+      <li><strong>Standard Operation Procedures:</strong> Developed new intake process and technical solution to support issue and enhancement requests for the Enterprise Data Foundation department.
+        <p><i>Results:</i> Supported ROI analysis and prioritization of greatest value-added initiatives. Standardized process for accepting and assigning work to developers.</p>
+      </li>
+      <li><strong>Quality Payment Program:</strong> Managed Merit-based Incentive Payment System (MIPS) reporting to CMS for Radiology and Surgical Services.
+        <p><i>Results:</i> Generated 5% positive payment adjustment to 2018 Medicare reimbursements.</p>
+      </li>
+    </ul>
+  </article>
+</section>
+
+<footer>
+  <p><a href="index.html">Home</a></p>
+</footer>
+
+</html>
