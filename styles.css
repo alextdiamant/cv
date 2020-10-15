@@ -1,15 +1,16 @@
+/* Color palette https://colorhunt.co/palette/14832 */
+
 /******************TAG SELECTORS******************/
 body {
   background-color: white;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
 }
 
 hr {
-  border-style: none;
-  border-top-style: dotted;
-  border-color: grey;
-  border-width: 5px;
-  width: 5%;
+  border-top: 1px solid;
+  border-color: #eee;
+  margin: 20px 5px;
 }
 
 h1 {
@@ -17,8 +18,18 @@ h1 {
   margin-top: 0px;
 }
 
+h2 {
+  color: #40514e;
+}
+
 h3 {
-  color: #5f5f5f;
+  font-size: 25px;
+  color: #40514e;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
 }
 
 img:hover {
@@ -35,7 +46,7 @@ section {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 200px;
+  width: 193px;
   background-color: #f1f1f1;
 }
 
@@ -82,7 +93,9 @@ footer {
 }
 
 /******************CLASS SELECTORS******************/
-
+#topnav-home {
+  padding-right: 20px;
+}
 
 .topnav a.active {
   background-color: #4CAF50;
@@ -98,7 +111,6 @@ footer {
   background-color: #333;
 }
 
-/* Style the topnav links */
 .topnav a {
   float: left;
   display: block;
@@ -113,6 +125,8 @@ footer {
   background-color: #111;
   color: 333;
 }
+
+
 
 .link-inactive {
   color: black;
@@ -144,6 +158,5 @@ footer {
   .flex-item-right, .flex-item-left {
     flex: 100%;
   }
-
 
 /******************ID SELECTORS******************/
