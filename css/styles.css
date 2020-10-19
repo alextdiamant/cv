@@ -126,13 +126,12 @@ footer {
   color: 333;
 }
 
-
-
 .link-inactive {
   color: black;
   background-color: transparent;
   text-decoration: none;
 }
+
 
 .flex-container {
   display: flex;
