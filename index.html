@@ -10,76 +10,42 @@
 </head>
 
 <style>
-  p {
-    margin-left: 5px;
-    margin-right: 5px;
+  * {
+    box-sizing: border-box;
   }
 
-
-  h5 {
-    font-size: 18px;
-    color: #5f5f5f;
-    margin-top: 10px;
-    margin-bottom: 8px;
-  }
-
-  h6 {
-    font-size: 18px;
-    color: #5f5f5f;
-    margin-top: 8px;
-    margin-bottom: 10px;
-  }
-
-  .container {
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
     border-radius: 5px;
     padding: 10px;
     margin: 5px;
-    max-width: 1400px;
   }
 
-  .col-33 {
+  .flex-item-left {
     float: left;
-    width: 33%;
-    max-width: 260px;
+    flex: 0 0 300px;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 0 8px;
+    padding: 0 10px 0 20px;
+    margin-left: 8px;
     margin-right: 8px;
+    margin-bottom: 12px;
   }
 
-  .display-container {
-    position: relative;
-  }
-
-  .display-bottom-left {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
-
-  .col-67 {
+  .flex-item-right {
     float: left;
-    width: 67%;
+    flex: 66%;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 0 8px;
-    margin-left: 10px;
+    padding: 0 15px;
+    margin-left: 8px;
+    margin-right: 8px;
     margin-bottom: 10px;
   }
 
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-
-    .col-33,
-    .col-67,
-    input[type=submit] {
-      width: 100%;
-      margin-top: 0;
+  @media screen and (max-width: 620px) {
+    .flex-container {
+      flex-direction: column;
     }
   }
 </style>
@@ -93,15 +59,10 @@
     <a href="tableau-samples-ecommerce.html">Tableau Dashboards</a>
   </div>
 
-  <div class="row">
+  <div class="flex-container">
+    <div class="flex-item-left">
 
-  </div>
-
-  <div class="container">
-    <div class="col-33">
-      <div class="display-container">
-        <img style="padding: 5px; margin: 5px;" src="images/Alex Headshot.png" alt="Alex profile picture">
-      </div>
+      <img style="padding: 5px; margin: 5px;" src="images/Alex Headshot.png" alt="Alex profile picture">
       <h2>Alex Diamant</h2>
       <p><span class="material-icons">
           person
@@ -111,74 +72,18 @@
         </span> Plantation, FL</p>
       <p><span class="material-icons">
           email
-        </span> alextdiamant@gmail.com</p>
+        </span><a href="mailto:alextdiamant@gmail.com"> alextdiamant@gmail.com</a></p>
       <p><span class="material-icons">
           smartphone
         </span> (954) 980-1901</p>
       <p><span class="material-icons">
           link
         </span><a href="https://www.linkedin.com/in/alexdiamant/" target="_blank"> linkedin.com/in/alexdiamant</a></p>
-
       <hr>
-      <h3>Skills</h3>
+      <h2>Skills</h2>
       <p style="
-        margin-bottom: 5px;
-      ">Stakeholder Management</p>
-      <p style="
-        margin-top: 5px;
-        margin-bottom: 5px;
-        color: #11999e;
-      "><span class="material-icons">
-          star star star star star
-        </span></p>
-      <p style="
-        margin-top: 5px;
-        margin-bottom: 5px;
-      ">Tableau</p>
-      <p style="
-        margin-top: 5px;
-        margin-bottom: 5px;
-        color: #11999e;
-      "><span class="material-icons">
-          star star star star star
-        </span></p>
-      <p style="
-        margin-top: 5px;
-        margin-bottom: 5px;
-      ">Excel</p>
-      <p style="
-        margin-top: 5px;
-        margin-bottom: 5px;
-        color: #11999e;
-      "><span class="material-icons">
-          star star star star star
-        </span></p>
-      <p style="
-        margin-top: 5px;
-        margin-bottom: 5px;
-      ">Vendor Management</p>
-      <p style="
-        margin-top: 5px;
-        margin-bottom: 5px;
-        color: #11999e;
-      "><span class="material-icons">
-          star star star star star
-        </span></p>
-        <p style="
-            margin-top: 5px;
-            margin-bottom: 5px;
-          ">Jira</p>
-        <p style="
-            margin-top: 5px;
-            margin-bottom: 5px;
-            color: #11999e;
-          "><span class="material-icons">
-            star star star star star
-          </span></p>
-      <p style="
-          margin-top: 5px;
           margin-bottom: 5px;
-        ">Scrum</p>
+        ">Stakeholder Management</p>
       <p style="
           margin-top: 5px;
           margin-bottom: 5px;
@@ -187,32 +92,89 @@
           star star star star star
         </span></p>
       <p style="
-        margin-top: 5px;
-        margin-bottom: 5px;
-      ">Microsoft Project</p>
+          margin-top: 5px;
+          margin-bottom: 5px;
+        ">Tableau</p>
       <p style="
-        margin-top: 5px;
-        margin-bottom: 5px;
-        color: #11999e;
-      "><span class="material-icons">
+          margin-top: 5px;
+          margin-bottom: 5px;
+          color: #11999e;
+        "><span class="material-icons">
+          star star star star star
+        </span></p>
+      <p style="
+          margin-top: 5px;
+          margin-bottom: 5px;
+        ">Excel</p>
+      <p style="
+          margin-top: 5px;
+          margin-bottom: 5px;
+          color: #11999e;
+        "><span class="material-icons">
+          star star star star star
+        </span></p>
+      <p style="
+          margin-top: 5px;
+          margin-bottom: 5px;
+        ">Vendor Management</p>
+      <p style="
+          margin-top: 5px;
+          margin-bottom: 5px;
+          color: #11999e;
+        "><span class="material-icons">
+          star star star star star
+        </span></p>
+      <p style="
+              margin-top: 5px;
+              margin-bottom: 5px;
+            ">Jira</p>
+      <p style="
+              margin-top: 5px;
+              margin-bottom: 5px;
+              color: #11999e;
+            "><span class="material-icons">
+          star star star star star
+        </span></p>
+      <p style="
+            margin-top: 5px;
+            margin-bottom: 5px;
+          ">Scrum</p>
+      <p style="
+            margin-top: 5px;
+            margin-bottom: 5px;
+            color: #11999e;
+          "><span class="material-icons">
+          star star star star star
+        </span></p>
+      <p style="
+          margin-top: 5px;
+          margin-bottom: 5px;
+        ">Microsoft Project</p>
+      <p style="
+          margin-top: 5px;
+          margin-bottom: 5px;
+          color: #11999e;
+        "><span class="material-icons">
           star star star star star_border
         </span></p>
       <p style="
-        margin-top: 5px;
-        margin-bottom: 5px;
-      ">HTML / CSS</p>
+          margin-top: 5px;
+          margin-bottom: 5px;
+        ">HTML / CSS</p>
       <p style="
-        margin-top: 5px;
-        margin-bottom: 5px;
-        color: #11999e;
-      "><span class="material-icons">
+          margin-top: 5px;
+          margin-bottom: 5px;
+          color: #11999e;
+        "><span class="material-icons">
           star star star star_border star_border
         </span></p>
 
     </div>
 
 
-    <div class="col-67">
+
+
+    <div class="flex-item-right">
       <h3><span class="material-icons">
           business_center
         </span> Work Experience</h3>
@@ -261,8 +223,17 @@
       <h6><span class="material-icons">
           date_range
         </span>May 2012</h6>
+
+
+
+
+
+
     </div>
   </div>
+
+
+
 
 </body>
 
